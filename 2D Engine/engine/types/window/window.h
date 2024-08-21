@@ -56,6 +56,8 @@ public:
 #pragma endregion
 
 #pragma region sim windows
+#include "sim/simulator.h"
+
 class sim_window : public window
 {
 public:
@@ -64,5 +66,7 @@ public:
 
 	void content();
 	void handle_input();
+
+	simulator* sim = new simulator();
 };
 #pragma endregion

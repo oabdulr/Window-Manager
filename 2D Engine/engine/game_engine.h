@@ -2,6 +2,8 @@
 #include <GLFW/glfw3.h>
 #include "string"
 #include "vector"
+#include <chrono>
+
 #include "unordered_map"
 
 #include "utils/utils.hpp"
@@ -40,6 +42,7 @@ public:
 	text_cursor* text_cursor;
 	mouse_cursor* mouse_cursor;
 	desktop* desktop;
+	std::chrono::duration<double> deltaTime;
 
 	std::unordered_map<std::string, unsigned int> loaded_textures;
 	std::vector< engine_window > engine_windows { };
