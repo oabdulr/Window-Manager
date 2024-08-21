@@ -2,8 +2,14 @@
 
 void key_manager::key_callback( GLFWwindow* window, int key, int scancode, int action, int mods )
 {
+	if (!current_window || current_window->line_data.empty())
+		return;
+
 	std::string txt = std::get<0>( current_window->line_data[ current_line ] );
 	engine->text_cursor->pos = std::get<1>( current_window->line_data[ current_line ] );
+
+	if (key == GLFW_KEY_LEFT_SUPER)
+		return;
 
 	if ( action != GLFW_PRESS && action != GLFW_REPEAT )
 		return;

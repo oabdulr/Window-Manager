@@ -147,6 +147,8 @@
     <ClCompile Include="engine\types\font manager\font.cpp" />
     <ClCompile Include="engine\game_engine.cpp" />
     <ClCompile Include="engine\types\drawing\drawing.cpp" />
+    <ClCompile Include="engine\types\window\sim\sim_window.cpp" />
+    <ClCompile Include="engine\types\window\text\text_window.cpp" />
     <ClCompile Include="engine\types\window\window.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -165,6 +167,8 @@
     <ClInclude Include="engine\types\vectors\vec2.hpp" />
     <ClInclude Include="engine\types\vectors\vec3.hpp" />
     <ClInclude Include="engine\types\vectors\vec4.hpp" />
+    <ClInclude Include="engine\types\window\sim\game_objects.h" />
+    <ClInclude Include="engine\types\window\sim\simulator.h" />
     <ClInclude Include="engine\types\window\window.h" />
     <ClInclude Include="engine\utils\utils.hpp" />
   </ItemGroup>

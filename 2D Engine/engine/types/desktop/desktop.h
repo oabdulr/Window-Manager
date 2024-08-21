@@ -8,11 +8,12 @@ class desktop;
 class icon
 {
 public:
-	icon( engine_2d* engine, std::string name, std::string tex_name, rect position ) : engine(engine), name( name ), tex_name (tex_name), position( position ) { }
+	icon( engine_2d* engine, std::string display_name, std::string name, std::string tex_name, rect position ) : engine(engine), display_name(display_name), name( name ), tex_name (tex_name), position( position ) { }
 
-	void handle_mouse( );
+	void handle_mouse( icon* pIcon );
 
 	engine_2d* engine;
+	std::string display_name;
 	std::string name;
 	std::string tex_name;
 	rect position;
@@ -27,7 +28,7 @@ public:
 	desktop( engine_2d* engine ) : engine ( engine ) { }
 
 	void draw_icons( );
-	void create_icon( std::string name, std::string tex_name, rect position );
+	void create_icon( std::string display_name, std::string name, std::string tex_name, rect position );
 
 	std::vector<icon*> icons {  };
 	engine_2d* engine;

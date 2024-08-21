@@ -63,7 +63,7 @@ void mouse_cursor::handle_mouse_input( )
 		icon* ic = engine->desktop->icons[ idx ];
 
 		if ( ic->position.is_inside( mouse_cursor::mouse_positon ) )
-			ic->handle_mouse( );
+			ic->handle_mouse( ic );
 		else
 			ic->is_hovered = false;
 

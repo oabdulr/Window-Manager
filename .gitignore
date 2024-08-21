@@ -10,3 +10,4 @@
 *.manifest
 /2D Engine/x64
 /x64
+*.json

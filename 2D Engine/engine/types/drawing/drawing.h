@@ -9,7 +9,9 @@ public:
 	drawing( engine_2d* engine ) : engine( engine ) { }
 
 	void set_color( vec3 color, bool is32 = true );
+	void set_thickness(int t);
 	void draw_line( vec2 start, vec2 end, int thickness = 1 );
+	void draw_circle(vec2 start, float r, int num_segments, bool dotted = false);
 	void draw_rect( rect data, int thickness = 1 );
 	void draw_filled_rect( rect data, int thickness = 1 );
 

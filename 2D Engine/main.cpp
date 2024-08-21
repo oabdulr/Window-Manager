@@ -39,7 +39,8 @@ void main( )
 	glfwSetCursorPosCallback( engine.get_window( ), mouse_cursor::mouse_position_callback );
 	glfwSetMouseButtonCallback( engine.get_window( ), mouse_cursor::mouse_down_callback );
 
-	engine.desktop->create_icon("Create\nWindow", "window_icon", rect( 30, 30, 50, 50 ) );
+	engine.desktop->create_icon("Create\nWindow", "create_window", "window_icon", rect( 30, 30, 50, 50 ) );
+	engine.desktop->create_icon("Simulator", "sim_game", "window_icon", rect( 30, 150, 50, 50) );
 
 	while ( !glfwWindowShouldClose( engine.get_window( ) ) )
 	{
