@@ -6,6 +6,7 @@
 
 engine_2d engine( { 1600.f, 900.f }, "Engine 2D" );
 std::chrono::high_resolution_clock::time_point previousTime = std::chrono::high_resolution_clock::now();
+std::chrono::high_resolution_clock::time_point currentTime;
 
 //262 right
 // 263 left
@@ -45,14 +46,14 @@ void main( )
 
 	while ( !glfwWindowShouldClose( engine.get_window( ) ) )
 	{
-		std::chrono::high_resolution_clock::time_point currentTime = std::chrono::high_resolution_clock::now();
-		engine.deltaTime = currentTime - previousTime;
-		previousTime = currentTime;
-
 		const vec4 background_color { 0.1f, 0.1f, 0.1f, 1.f };
 		engine.glfw_clear_color( background_color );
 
 		//engine.drawing->render_string( { 100, 100 }, txt, 24, -1 );
+
+		currentTime = std::chrono::high_resolution_clock::now();
+		engine.deltaTime = currentTime - previousTime;
+		previousTime = currentTime;
 
 		engine.desktop->draw_icons( );
 

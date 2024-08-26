@@ -33,6 +33,7 @@ public:
 	void glfw_endframe( );
 	void glfw_terminate( );
 	void glfw_clear_color( vec4 color );
+	float get_dT();
 
 	vec2 screen_size;
 
@@ -42,7 +43,7 @@ public:
 	text_cursor* text_cursor;
 	mouse_cursor* mouse_cursor;
 	desktop* desktop;
-	std::chrono::duration<double> deltaTime;
+	float deltaTime;
 
 	std::unordered_map<std::string, unsigned int> loaded_textures;
 	std::vector< engine_window > engine_windows { };
