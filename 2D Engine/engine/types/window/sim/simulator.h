@@ -7,5 +7,5 @@ public:
 	std::vector<game_object*> objects{};
 
 	bool is_gravity = true;
-	float gravity = -1.f; //100% real earth graity 11!!!
+	float gravity = 1.f; //100% real earth graity 11!!!
 };

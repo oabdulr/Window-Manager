@@ -3,9 +3,9 @@
 void mouse_cursor::mouse_down_callback( GLFWwindow* window, int button, int action, int mods )
 {
 	if ( button == 0 )
-		mouse_cursor::m1 = action;
+		mouse_cursor::m1_raw = action;
 	else if ( button == 1 )
-		mouse_cursor::m2 = action;
+		mouse_cursor::m2_raw = action;
 }
 
 void mouse_cursor::mouse_position_callback( GLFWwindow* window, double xpos, double ypos )
@@ -16,6 +16,33 @@ void mouse_cursor::mouse_position_callback( GLFWwindow* window, double xpos, dou
 void mouse_cursor::draw_mouse_cursor( )
 {
 	rect pos = rect( mouse_cursor::mouse_positon.x, mouse_cursor::mouse_positon.y, mouse_cursor::mouse_size.x, mouse_cursor::mouse_size.y );
+	pos.apply_scale( mouse_cursor::engine->desktop_scale );
+
+	// holy bad code
+	if (m1_raw && !m1 && !m1_h) {
+	    m1 = true;
+		m1_h = true;
+	}
+	else if (m1_raw && m1 && m1_h) {
+		m1 = false;
+	}
+	else if (!m1_raw) {
+		m1 = false;
+		m1_h = false;
+	}
+
+	if (m2_raw && !m2 && !m2_h) {
+		m2 = true;
+		m2_h = true;
+	}
+	else if (m2_raw && m2 && m2_h) {
+		m2 = false;
+	}
+	else if (!m2_raw) {
+		m2 = false;
+		m2_h = false;
+	}
+
 
 	// mouse filled
 	if ( m1 || m2 )

@@ -25,7 +25,7 @@ public:
 
 	void render_char( vec2 pos, char c, vec2 offsets, float raw_scale, vec4 color = { 1.f, 1.f, 1.f, 1.f } );
 	void render_char( glyph* glyph, vec2 pos, char c, vec2 offsets, float raw_scale, int outline = 2, vec4 color = { 1.f, 1.f, 1.f, 1.f } );
-	vec2 render_string( vec2 pos, std::string string, int pt_scale = 12, int outline = 2, float cutoff = 0.f, vec4 color = { 1.f, 1.f, 1.f, 1.f } );
+	vec2 render_string( vec2 pos, std::string string, int pt_scale = 12, int outline = 2, float cutoff = 0.f, vec4 color = { 1.f, 1.f, 1.f, 1.f }, bool apply_scale = true);
 
 	engine_2d* engine;
 };

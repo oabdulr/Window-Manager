@@ -27,4 +27,20 @@ public:
 
 		return true;
 	}
+
+	void apply_scale(float scale, bool only_h = false, bool only_w = false)
+	{
+		this->height *= scale;
+		this->width *= scale;
+	}
+
+	void apply_scale_h(float scale)
+	{
+		this->height *= scale;
+	}
+
+	void apply_scale_w(float scale)
+	{
+		this->width *= scale;
+	}
 };

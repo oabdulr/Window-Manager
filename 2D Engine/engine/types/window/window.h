@@ -8,6 +8,7 @@ class window
 public:
 	window( engine_2d* engine, rect size ) : engine( engine )
 	{
+		size.apply_scale( engine->desktop_scale );
 		this->update_size( size );
 		engine->engine_windows.push_back( engine_window( this ) );
 	}
@@ -21,7 +22,7 @@ public:
 	rect close_box;
 	rect resize_box;
 
-	int holding = 0;
+	int holding;
 	vec2 holding_position;
 
 	void update( );
@@ -46,7 +47,7 @@ class text_window : public window
 {
 public:
 
-	text_window(engine_2d* engine, rect size) : window(engine, size) {}
+	text_window(engine_2d* engine, rect size) : window(engine, size) { this->font_size *= (this->engine->desktop_scale * 1.3f); }
 
 	void content();
 	void handle_input();

@@ -54,6 +54,7 @@ engine_2d::engine_2d( vec2 size, const char* name )
 
 	this->screen_size = size;
 	this->window = glfwCreateWindow( this->screen_size.x, this->screen_size.y, name, NULL, NULL );
+	this->desktop_scale = 2.f; // make customizable in future
 
 	if ( !window )
 	{

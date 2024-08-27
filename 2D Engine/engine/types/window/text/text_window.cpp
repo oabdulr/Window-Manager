@@ -8,7 +8,7 @@ void text_window::content() {
 	int y_offset = 10;
 	for (int line = 0; line < lines; line++)
 	{
-		engine->drawing->render_string(vec2(this->size.x + 10, this->size.y + y_offset + (font_size * line)), std::format("{}", line), font_size, -1);
+		engine->drawing->render_string(vec2(this->size.x + 10, this->size.y + y_offset + (font_size * line)), std::format("{}", line), font_size, -1, 0.f, vec4(1.f, 1.f, 1.f, 1.f), false);
 		engine->drawing->draw_line(vec2(this->size.x + 5, this->size.y + y_offset + (font_size * line) + height + 20), vec2(this->size.x + this->size.width - 5, this->size.y + y_offset + (font_size * line) + height + 20));
 
 		if (this->line_data.find(line) == this->line_data.end())
@@ -23,7 +23,7 @@ void text_window::content() {
 }
 
 void text_window::handle_input() {
-	if (mouse_cursor::m1)
+	if (mouse_cursor::m1 || mouse_cursor::m1_h)
 	{
 
 		float lines = floor(this->size.height / font_size) - 1;

@@ -36,6 +36,7 @@ public:
 	float get_dT();
 
 	vec2 screen_size;
+	float desktop_scale = 1.f;
 
 	font_manager* font_manager;
 	font* current_font;

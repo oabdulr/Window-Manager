@@ -14,7 +14,8 @@ public:
 
 	inline static vec2 mouse_size = vec2(3, 3);
 	inline static vec2 mouse_positon;
-	inline static short m1, m2;
+	inline static bool m1_raw, m2_raw;
+	inline static bool m1, m2, m1_h, m2_h;
 
 	inline static engine_2d* engine;
 };

@@ -2,36 +2,28 @@
 
 void window::handle_title_input( )
 {
-	if ( mouse_cursor::m1 )
+	if ( mouse_cursor::m1 || mouse_cursor::m1_h )
 	{
 		this->kill = this->close_box.is_inside( mouse_cursor::mouse_positon );
-		if ( !holding )
-		{
-			holding++;
+		if (!mouse_cursor::m1_h)
 			return;
-		}
 
 		if ( holding_position.is_zero( ) )
 			holding_position = vec2( -this->title.width / 2, -this->title.height / 2 );
 
 		this->update_size( rect( mouse_cursor::mouse_positon.x + holding_position.x, mouse_cursor::mouse_positon.y - holding_position.y, size.width, size.height ) );
 	}
-	else if ( !mouse_cursor::m1 && holding )
-	{
-		holding = 0;
-		holding_position.set( 0, 0 );
-	}
+	else if (!mouse_cursor::m1_h && !holding_position.is_zero())
+		holding_position.set(0, 0);
 }
 
 void window::handle_resize_input( )
 {
-	if ( mouse_cursor::m1 )
+	if (mouse_cursor::m1 || mouse_cursor::m1_h)
 	{
-		if ( !holding )
-		{
-			holding++;
+		if ( !mouse_cursor::m1_h)
 			return;
-		}
+		
 
 		if ( holding_position.is_zero( ) )
 			holding_position = vec2( -this->resize_box.width / 2, -this->resize_box.height / 2 );
@@ -42,11 +34,8 @@ void window::handle_resize_input( )
 		if ( new_x > this->resize_box.width + 2 && new_y > this->resize_box.height + 2 )
 			this->update_size( rect( this->size.x, this->size.y, new_x, new_y ) );
 	}
-	else if ( !mouse_cursor::m1 && holding )
-	{
-		holding = 0;
+	else if ( !mouse_cursor::m1_h && !holding_position.is_zero() )
 		holding_position.set( 0, 0 );
-	}
 }
 
 void window::update( )
@@ -58,9 +47,17 @@ void window::update_size( rect size )
 {
 	this->size = size;
 	this->title = rect( this->size.x, this->size.y - 16, this->size.width, 16 );
-	this->close_box = rect( this->title.x + this->title.width - 14, this->title.y + 3, 10, 10 );
-	this->resize_box = rect( this->size.x + this->size.width - 11, this->size.y + this->size.height - 11, 10, 10 );
+	this->title.apply_scale_h(this->engine->desktop_scale);
 
+	this->close_box = rect( this->title.x + this->title.width, this->title.y, 10, 10 );
+	this->close_box.apply_scale(this->engine->desktop_scale);
+	this->close_box.x -= this->title.height - (2 * this->engine->desktop_scale);
+	this->close_box.y += 3 * this->engine->desktop_scale;
+
+	this->resize_box = rect( this->size.x + this->size.width, this->size.y + this->size.height, 10, 10);
+	this->resize_box.apply_scale(this->engine->desktop_scale);
+	this->resize_box.x -= this->resize_box.width + 1;
+	this->resize_box.y -= this->resize_box.height + 1;
 
 	this->height = engine->current_font->get_fixed_height( ) * ( font_size / engine->current_font->get_max_size( ) ) / 2.f;
 

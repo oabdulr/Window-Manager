@@ -232,13 +232,18 @@ void drawing::render_char(vec2 pos, char c, vec2 offsets, float raw_scale, vec4 
 	glEnd();
 }
 
-vec2 drawing::render_string(vec2 pos, std::string string, int pt_scale, int outline, float cutoff, vec4 color)
+vec2 drawing::render_string(vec2 pos, std::string string, int pt_scale, int outline, float cutoff, vec4 color, bool apply_scale)
 {
 
 	vec2 offsets{ 0, 0 };
 
 	glEnable(GL_TEXTURE_2D);
-	float raw_scale = static_cast<float>(pt_scale) / static_cast<float>(engine->current_font->get_max_size());
+	float raw_scale;
+	if (apply_scale)
+		raw_scale = static_cast<float>((pt_scale * (this->engine->desktop_scale * 1.3f))) / static_cast<float>(engine->current_font->get_max_size());
+	else
+		raw_scale = static_cast<float>((pt_scale) / static_cast<float>(engine->current_font->get_max_size()));
+
 	engine->text_cursor->raw_scale = raw_scale;
 
 	float space_pixel = 18 * raw_scale;

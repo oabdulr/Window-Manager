@@ -3,40 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\window\\sim\\sim_window.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|solutionrelative:2D Engine\\engine\\types\\window\\sim\\sim_window.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\drawing\\drawing.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|solutionrelative:2D Engine\\engine\\types\\drawing\\drawing.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\mouse cursor\\mouse_cursor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|solutionrelative:2D Engine\\engine\\types\\mouse cursor\\mouse_cursor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\window\\window.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|solutionrelative:2D Engine\\engine\\types\\window\\window.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\game_engine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|solutionrelative:2D Engine\\engine\\game_engine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\game_engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|solutionrelative:2D Engine\\engine\\game_engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\window\\sim\\simulator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|solutionrelative:2D Engine\\engine\\types\\window\\sim\\simulator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\window\\sim\\sim_window.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|solutionrelative:2D Engine\\engine\\types\\window\\sim\\sim_window.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|solutionrelative:2D Engine\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\window\\window.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|solutionrelative:2D Engine\\engine\\types\\window\\window.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\game_engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|solutionrelative:2D Engine\\engine\\game_engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\window\\text\\text_window.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|solutionrelative:2D Engine\\engine\\types\\window\\text\\text_window.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\drawing\\drawing.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|solutionrelative:2D Engine\\engine\\types\\drawing\\drawing.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\game_engine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|solutionrelative:2D Engine\\engine\\game_engine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\desktop\\desktop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -49,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\desktop\\desktop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|solutionrelative:2D Engine\\engine\\types\\desktop\\desktop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\mouse cursor\\mouse_cursor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0D2AC2BD-90F7-4219-A372-3120924083B0}|2D Engine\\2D Engine.vcxproj|solutionrelative:2D Engine\\engine\\types\\mouse cursor\\mouse_cursor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,137 +50,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "game_engine.cpp",
-              "DocumentMoniker": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\game_engine.cpp",
-              "RelativeDocumentMoniker": "2D Engine\\engine\\game_engine.cpp",
-              "ToolTip": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\game_engine.cpp",
-              "RelativeToolTip": "2D Engine\\engine\\game_engine.cpp",
-              "ViewState": "AgIAABUAAAAAAAAAAAAMwCcAAAADAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "drawing.cpp",
+              "DocumentMoniker": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\drawing\\drawing.cpp",
+              "RelativeDocumentMoniker": "2D Engine\\engine\\types\\drawing\\drawing.cpp",
+              "ToolTip": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\drawing\\drawing.cpp",
+              "RelativeToolTip": "2D Engine\\engine\\types\\drawing\\drawing.cpp",
+              "ViewState": "AgIAAOUAAAAAAAAAAAAIwOoAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-26T22:35:57.678Z",
+              "WhenOpened": "2024-08-27T19:24:01.507Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "window.cpp",
+              "DocumentMoniker": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\window\\window.cpp",
+              "RelativeDocumentMoniker": "2D Engine\\engine\\types\\window\\window.cpp",
+              "ToolTip": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\window\\window.cpp",
+              "RelativeToolTip": "2D Engine\\engine\\types\\window\\window.cpp",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-27T19:15:00.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "sim_window.cpp",
               "DocumentMoniker": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\window\\sim\\sim_window.cpp",
               "RelativeDocumentMoniker": "2D Engine\\engine\\types\\window\\sim\\sim_window.cpp",
               "ToolTip": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\window\\sim\\sim_window.cpp",
               "RelativeToolTip": "2D Engine\\engine\\types\\window\\sim\\sim_window.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowCkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-21T19:18:10.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "game_engine.h",
-              "DocumentMoniker": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\game_engine.h",
-              "RelativeDocumentMoniker": "2D Engine\\engine\\game_engine.h",
-              "ToolTip": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\game_engine.h",
-              "RelativeToolTip": "2D Engine\\engine\\game_engine.h",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAMwC0AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-21T19:05:57.228Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "window.cpp",
-              "DocumentMoniker": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\window\\window.cpp",
-              "RelativeDocumentMoniker": "2D Engine\\engine\\types\\window\\window.cpp",
-              "ToolTip": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\window\\window.cpp",
-              "RelativeToolTip": "2D Engine\\engine\\types\\window\\window.cpp",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAAAF0AAAA0AAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "game_engine.cpp",
+              "DocumentMoniker": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\game_engine.cpp",
+              "RelativeDocumentMoniker": "2D Engine\\engine\\game_engine.cpp",
+              "ToolTip": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\game_engine.cpp",
+              "RelativeToolTip": "2D Engine\\engine\\game_engine.cpp",
+              "ViewState": "AgIAACAAAAAAAAAAAAAnwDgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-21T18:54:49.399Z",
+              "WhenOpened": "2024-08-27T19:01:23.97Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "window.h",
-              "DocumentMoniker": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\window\\window.h",
-              "RelativeDocumentMoniker": "2D Engine\\engine\\types\\window\\window.h",
-              "ToolTip": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\window\\window.h",
-              "RelativeToolTip": "2D Engine\\engine\\types\\window\\window.h",
-              "ViewState": "AgIAABAAAAAAAAAAAAAMwCAAAAAKAAAAAAAAAA==",
+              "Title": "game_engine.h",
+              "DocumentMoniker": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\game_engine.h",
+              "RelativeDocumentMoniker": "2D Engine\\engine\\game_engine.h",
+              "ToolTip": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\game_engine.h",
+              "RelativeToolTip": "2D Engine\\engine\\game_engine.h",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABwAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-21T18:56:58.824Z"
+              "WhenOpened": "2024-08-27T19:01:26.507Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "desktop.cpp",
-              "DocumentMoniker": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\desktop\\desktop.cpp",
-              "RelativeDocumentMoniker": "2D Engine\\engine\\types\\desktop\\desktop.cpp",
-              "ToolTip": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\desktop\\desktop.cpp",
-              "RelativeToolTip": "2D Engine\\engine\\types\\desktop\\desktop.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "mouse_cursor.cpp",
+              "DocumentMoniker": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\mouse cursor\\mouse_cursor.cpp",
+              "RelativeDocumentMoniker": "2D Engine\\engine\\types\\mouse cursor\\mouse_cursor.cpp",
+              "ToolTip": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\mouse cursor\\mouse_cursor.cpp",
+              "RelativeToolTip": "2D Engine\\engine\\types\\mouse cursor\\mouse_cursor.cpp",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAIwE8AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-21T18:46:38.941Z"
+              "WhenOpened": "2024-08-27T19:15:15.016Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\main.cpp",
               "RelativeDocumentMoniker": "2D Engine\\main.cpp",
               "ToolTip": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\main.cpp",
               "RelativeToolTip": "2D Engine\\main.cpp",
-              "ViewState": "AgIAACUAAAAAAAAAAAAowDYAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-19T20:54:58.511Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "simulator.h",
-              "DocumentMoniker": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\window\\sim\\simulator.h",
-              "RelativeDocumentMoniker": "2D Engine\\engine\\types\\window\\sim\\simulator.h",
-              "ToolTip": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\window\\sim\\simulator.h",
-              "RelativeToolTip": "2D Engine\\engine\\types\\window\\sim\\simulator.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-21T19:28:21.565Z",
+              "DocumentIndex": 7,
+              "Title": "desktop.cpp",
+              "DocumentMoniker": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\desktop\\desktop.cpp",
+              "RelativeDocumentMoniker": "2D Engine\\engine\\types\\desktop\\desktop.cpp",
+              "ToolTip": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\desktop\\desktop.cpp",
+              "RelativeToolTip": "2D Engine\\engine\\types\\desktop\\desktop.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-21T18:46:38.941Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "text_window.cpp",
-              "DocumentMoniker": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\window\\text\\text_window.cpp",
-              "RelativeDocumentMoniker": "2D Engine\\engine\\types\\window\\text\\text_window.cpp",
-              "ToolTip": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\window\\text\\text_window.cpp",
-              "RelativeToolTip": "2D Engine\\engine\\types\\window\\text\\text_window.cpp",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-21T18:56:37.681Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "drawing.h",
-              "DocumentMoniker": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\drawing\\drawing.h",
-              "RelativeDocumentMoniker": "2D Engine\\engine\\types\\drawing\\drawing.h",
-              "ToolTip": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\drawing\\drawing.h",
-              "RelativeToolTip": "2D Engine\\engine\\types\\drawing\\drawing.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-21T19:35:56.068Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "key_manager.h",
               "DocumentMoniker": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\key manager\\key_manager.h",
               "RelativeDocumentMoniker": "2D Engine\\engine\\types\\key manager\\key_manager.h",
@@ -204,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "desktop.h",
               "DocumentMoniker": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\desktop\\desktop.h",
               "RelativeDocumentMoniker": "2D Engine\\engine\\types\\desktop\\desktop.h",
@@ -213,18 +179,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-08-21T18:49:22.861Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "mouse_cursor.cpp",
-              "DocumentMoniker": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\mouse cursor\\mouse_cursor.cpp",
-              "RelativeDocumentMoniker": "2D Engine\\engine\\types\\mouse cursor\\mouse_cursor.cpp",
-              "ToolTip": "C:\\Users\\oabdu\\OneDrive\\Documents\\GitHub\\2d-engine\\2D Engine\\engine\\types\\mouse cursor\\mouse_cursor.cpp",
-              "RelativeToolTip": "2D Engine\\engine\\types\\mouse cursor\\mouse_cursor.cpp",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAswEEAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-21T18:48:38.844Z"
             }
           ]
         }

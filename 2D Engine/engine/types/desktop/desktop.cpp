@@ -34,11 +34,12 @@ void desktop::draw_icons( )
 		engine->drawing->set_color( vec3( 255, 255, 255 ) );
 		engine->drawing->draw_rect( rect( ic->position.x, ic->position.y, ic->position.width, ic->position.height ), 2 );
 
-		engine->drawing->render_string( vec2( ic->position.x - 4, ic->position.y + ic->position.height + 10 ), ic->display_name, 16, -1 );
+		engine->drawing->render_string( vec2( ic->position.x - 4, ic->position.y + ic->position.height + 10 ), ic->display_name, 16, -1);
 	}
 }
 
 void desktop::create_icon( std::string display_name, std::string name, std::string tex_name, rect position )
 {
+	position.apply_scale(this->engine->desktop_scale);
 	this->icons.push_back( new icon( this->engine, display_name, name, tex_name, position ) );
 }

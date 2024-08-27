@@ -5,9 +5,6 @@ bool mouse_down = false;
 vec2 m1_down_loca = vec2();
 
 void sim_window::content() {
-	if (sim->objects.empty())
-		sim->objects.push_back(new game_object("test", vec2(100, 100), 15, 55));
-
 	float dT = engine->get_dT();
 
 	double forcex = 0;
@@ -62,6 +59,9 @@ void sim_window::content() {
 }
 
 void sim_window::handle_input() {
+	if (mouse_cursor::m2)
+		sim->objects.push_back(new game_object("test" + (sim->objects.size() / sizeof(game_object)), vec2(100, 100), 15 * this->engine->desktop_scale, 55));
+
 	if (mouse_cursor::m1) {
 		if (!mouse_down) {
 			m1_down_loca = mouse_cursor::mouse_positon;
