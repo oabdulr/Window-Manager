@@ -12,3 +12,5 @@
 /x64
 *.json
 /.vs
+/.vs
+.vs/2D Engine/v17/DocumentLayout.json
