@@ -44,7 +44,8 @@ public:
 	text_cursor* text_cursor;
 	mouse_cursor* mouse_cursor;
 	desktop* desktop;
-	std::chrono::duration<double> deltaTime;
+	float deltaTime;
+	int fps = 0;
 
 	std::unordered_map<std::string, unsigned int> loaded_textures;
 	std::vector< engine_window > engine_windows { };

@@ -1,18 +1,29 @@
 #include <iostream>
 #include <format>
+#include <thread>
 #include "windows.h"
 #include "engine/game_engine.h"
 #include "engine/types/window/window.h"
 
 engine_2d engine( { 1600.f, 900.f }, "Engine 2D" );
-std::chrono::high_resolution_clock::time_point previousTime = std::chrono::high_resolution_clock::now();
-std::chrono::high_resolution_clock::time_point currentTime;
 
-//262 right
-// 263 left
-// 264 down
-// 265 up
-// 257
+class FrameTimer {
+private:
+	std::chrono::steady_clock::time_point current_time;
+	std::chrono::steady_clock::time_point previous_time;
+
+public:
+	void update() {
+		previous_time = current_time;
+		current_time = std::chrono::high_resolution_clock::now();
+	}
+
+	float delta() const {
+		return std::chrono::duration<float>(current_time - previous_time).count();
+	}
+};
+
+FrameTimer blah = FrameTimer();
 
 void main( )
 {
@@ -46,14 +57,13 @@ void main( )
 
 	while ( !glfwWindowShouldClose( engine.get_window( ) ) )
 	{
+		
+		blah.update();
+		engine.deltaTime = blah.delta();
+
+
 		const vec4 background_color { 0.1f, 0.1f, 0.1f, 1.f };
 		engine.glfw_clear_color( background_color );
-
-		//engine.drawing->render_string( { 100, 100 }, txt, 24, -1 );
-
-		currentTime = std::chrono::high_resolution_clock::now();
-		engine.deltaTime = currentTime - previousTime;
-		previousTime = currentTime;
 
 		engine.desktop->draw_icons( );
 
@@ -68,6 +78,9 @@ void main( )
 		mouse_cursor::handle_mouse_input( );
 		mouse_cursor::draw_mouse_cursor( );
 		engine.glfw_endframe( );
+
+		printf("FPS %d DT: %.6f\r", engine.fps, engine.deltaTime);
+
 	}
 
 

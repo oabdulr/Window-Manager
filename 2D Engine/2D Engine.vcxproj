@@ -162,6 +162,7 @@
     <ClInclude Include="engine\types\font manager\font.h" />
     <ClInclude Include="engine\game_engine.h" />
     <ClInclude Include="engine\types\drawing\drawing.h" />
+    <ClInclude Include="engine\types\vectors\bounds.hpp" />
     <ClInclude Include="engine\types\vectors\rect.hpp" />
     <ClInclude Include="engine\types\vectors\vec.h" />
     <ClInclude Include="engine\types\vectors\vec2.hpp" />

@@ -37,9 +37,7 @@ void engine_2d::glfw_clear_color( vec4 color )
 
 float engine_2d::get_dT() 
 {
-	//float dT = this->deltaTime.count();
-	// needs fix, causes sim to just slam ball down unless its hardcoded
-	return 0.0007f; // Real delta time!!!! W0w
+	return this->deltaTime;
 }
 
 engine_2d::engine_2d( vec2 size, const char* name )

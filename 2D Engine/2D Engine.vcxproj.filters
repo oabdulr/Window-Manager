@@ -107,5 +107,8 @@
     <ClInclude Include="engine\types\window\sim\simulator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="engine\types\vectors\bounds.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
