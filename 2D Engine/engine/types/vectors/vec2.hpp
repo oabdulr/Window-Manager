@@ -36,4 +36,14 @@ public:
 	{
 		return vec2( this->x + r.x, this->y + r.y );
 	}
+
+	vec2 operator* (const vec2& r)
+	{
+		return vec2(this->x * r.x, this->y * r.y);
+	}
+
+	vec2 operator* (const float& r)
+	{
+		return vec2(this->x * r, this->y * r);
+	}
 };

@@ -11,17 +11,13 @@ void sim_window::content() {
 		game_object* obj = sim->objects[i];
 		
 		vec2 bc = obj->position.bc();
-		if ((this->size.bc().y <= bc.y) && abs(obj->velocity.y) < (0.1f * engine->deltaTime)) {
-			obj->velocity.y = 0.f;
-
-		}
-		else if (this->size.bc().y <= bc.y) {
+		if (this->size.bc().y <= bc.y) {
 			obj->velocity.y = -obj->velocity.y * obj->elasticity;
 		}
 		else
-			obj->velocity.y = obj->velocity.y + (this->sim->gravity * engine->deltaTime);
+			obj->velocity.y = this->sim->gravity + obj->velocity.y;
 
-		obj->position.append(obj->velocity);
+		obj->position.append(obj->velocity * engine->deltaTime);
 		engine->drawing->draw_circle(vec2(this->size.x + obj->position.center().x, this->size.y + obj->position.center().y), obj->radius, 20);
 	}
 }
