@@ -143,6 +143,7 @@
     <ClCompile Include="engine\types\desktop\desktop.cpp" />
     <ClCompile Include="engine\types\key manager\key_manager.cpp" />
     <ClCompile Include="engine\types\mouse cursor\mouse_cursor.cpp" />
+    <ClCompile Include="engine\types\simulator\simulator.cpp" />
     <ClCompile Include="engine\types\text cursor\text_cursor.cpp" />
     <ClCompile Include="engine\types\font manager\font.cpp" />
     <ClCompile Include="engine\game_engine.cpp" />
@@ -168,8 +169,8 @@
     <ClInclude Include="engine\types\vectors\vec2.hpp" />
     <ClInclude Include="engine\types\vectors\vec3.hpp" />
     <ClInclude Include="engine\types\vectors\vec4.hpp" />
-    <ClInclude Include="engine\types\window\sim\game_objects.h" />
-    <ClInclude Include="engine\types\window\sim\simulator.h" />
+    <ClInclude Include="engine\types\simulator\game_objects.h" />
+    <ClInclude Include="engine\types\simulator\simulator.h" />
     <ClInclude Include="engine\types\window\window.h" />
     <ClInclude Include="engine\utils\utils.hpp" />
   </ItemGroup>

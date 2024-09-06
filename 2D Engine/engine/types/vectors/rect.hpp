@@ -10,7 +10,22 @@ public:
 
 	rect operator-( rect const& r )
 	{
-		return rect( this->x - r.x, this->y - r.y, this->width - width, this->height - r.height );
+		return rect( this->x - r.x, this->y - r.y, this->width, this->height);
+	}
+
+	rect operator+(rect const& r)
+	{
+		return rect(this->x + r.x, this->y + r.y, this->width, this->height);
+	}
+
+	//rect operator+(vec2 const& r)
+	//{
+	//	return rect(this->x + r.x, this->y + r.y, this->width, this->height);
+	//}
+
+	vec2 operator+(vec2 const& r)
+	{
+		return vec2(this->x + r.x, this->y + r.y);
 	}
 
 	vec2 operator-( vec2 const& r )

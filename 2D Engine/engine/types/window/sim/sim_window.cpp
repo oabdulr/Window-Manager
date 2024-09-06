@@ -1,7 +1,5 @@
 #include "../window.h"
-#include "simulator.h"
-
-
+#include "../../simulator/simulator.h"
 
 void sim_window::content() {
 	engine->drawing->set_color(vec3(0, 0, 0));
@@ -10,7 +8,7 @@ void sim_window::content() {
 	for (int i = 0; i < sim->objects.size(); i++) {
 		game_object* obj = sim->objects[i];
 		
-		vec2 bc = obj->position.bc();
+		vec2 bc = this->size + obj->position.bc();
 		if (this->size.bc().y <= bc.y) {
 			obj->velocity.y = -obj->velocity.y * obj->elasticity;
 		}
@@ -18,6 +16,7 @@ void sim_window::content() {
 			obj->velocity.y = this->sim->gravity + obj->velocity.y;
 
 		obj->position.append(obj->velocity * engine->deltaTime);
+
 		engine->drawing->draw_circle(vec2(this->size.x + obj->position.center().x, this->size.y + obj->position.center().y), obj->radius, 20);
 	}
 }

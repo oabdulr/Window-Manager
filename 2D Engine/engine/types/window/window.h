@@ -57,7 +57,7 @@ public:
 #pragma endregion
 
 #pragma region sim windows
-#include "sim/simulator.h"
+#include "../simulator/simulator.h"
 
 class sim_window : public window
 {

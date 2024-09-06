@@ -51,6 +51,9 @@
     <ClCompile Include="engine\types\window\sim\sim_window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="engine\types\simulator\simulator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="engine\game_engine.h">
@@ -101,10 +104,10 @@
     <ClInclude Include="engine\types\key manager\key_manager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="engine\types\window\sim\game_objects.h">
+    <ClInclude Include="engine\types\simulator\game_objects.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="engine\types\window\sim\simulator.h">
+    <ClInclude Include="engine\types\simulator\simulator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="engine\types\vectors\bounds.hpp">

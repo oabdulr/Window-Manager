@@ -55,6 +55,9 @@ void main( )
 	engine.desktop->create_icon("Create\nWindow", "create_window", "window_icon", rect( 30, 30, 50, 50 ) );
 	engine.desktop->create_icon("Simulator", "sim_game", "window_icon", rect( 30, 220, 50, 50) );
 
+	//simulator::physics_update["7"] = NULL;
+	simulator::run_on_launch();
+
 	while ( !glfwWindowShouldClose( engine.get_window( ) ) )
 	{
 		
