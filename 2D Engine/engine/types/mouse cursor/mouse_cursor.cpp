@@ -105,6 +105,8 @@ void mouse_cursor::handle_mouse_input( )
 	if ( engine->kill_id != -1 )
 	{
 		//delete engine->engine_windows[ engine->kill_id ].object;
+		engine->engine_windows[engine->kill_id].object->implode();
+		delete engine->engine_windows[engine->kill_id].object;
 		engine->engine_windows.erase( engine->engine_windows.begin( ) + engine->kill_id );
 		engine->kill_id = -1;
 	}

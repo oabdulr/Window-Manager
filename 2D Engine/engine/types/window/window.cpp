@@ -9,7 +9,7 @@ void window::handle_title_input( )
 			return;
 
 		if ( holding_position.is_zero( ) )
-			holding_position = vec2( -this->title.width / 2, -this->title.height / 2 );
+			holding_position = vec2( -this->title.width / 2, -this->title.height / 4);
 
 		this->update_size( rect( mouse_cursor::mouse_positon.x + holding_position.x, mouse_cursor::mouse_positon.y - holding_position.y, size.width, size.height ) );
 	}
@@ -40,6 +40,8 @@ void window::handle_resize_input( )
 
 void window::update( )
 {
+	if (!this->ran_start)
+		this->start();
 	this->render_menu( );
 }
 

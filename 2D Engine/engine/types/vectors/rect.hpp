@@ -18,10 +18,37 @@ public:
 		return rect(this->x + r.x, this->y + r.y, this->width, this->height);
 	}
 
-	//rect operator+(vec2 const& r)
-	//{
-	//	return rect(this->x + r.x, this->y + r.y, this->width, this->height);
-	//}
+	// Overload += operator
+	rect& operator+=(const vec2& r)
+	{
+		this->x += r.x;
+		this->y += r.y;
+		return *this;
+	}
+
+	// Overload -= operator
+	rect& operator-=(const vec2& r)
+	{
+		this->x -= r.x;
+		this->y -= r.y;
+		return *this;
+	}
+
+	// Overload += operator
+	rect& operator+=(const rect& r)
+	{
+		this->x += r.x;
+		this->y += r.y;
+		return *this;
+	}
+
+	// Overload -= operator
+	rect& operator-=(const rect& r)
+	{
+		this->x -= r.x;
+		this->y -= r.y;
+		return *this;
+	}
 
 	vec2 operator+(vec2 const& r)
 	{
@@ -78,6 +105,14 @@ public:
 		return vec2(this->x, this->y + (this->height/2));
 	}
 
+	float distance(rect const& v) {
+		return utils::distance(this->x, this->y, v.x, v.y);
+	}
+
+	float distance(vec2 const& v) {
+		return utils::distance(this->x, this->y, v.x, v.y);
+	}
+
 	bool is_inside( vec2 position )
 	{
 		if ( this->x > position.x || this->y > position.y )
@@ -102,6 +137,11 @@ public:
 	void append(vec2 data) {
 		this->x += data.x;
 		this->y += data.y;
+	}
+
+	void entropy_append(vec2 data) {
+		this->x += data.x + utils::random() * 10;
+		this->y += data.y + utils::random() * 10;
 	}
 
 	void apply_scale_h(float scale)

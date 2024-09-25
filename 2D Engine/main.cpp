@@ -7,27 +7,10 @@
 
 engine_2d engine( { 1600.f, 900.f }, "Engine 2D" );
 
-class FrameTimer {
-private:
-	std::chrono::steady_clock::time_point current_time;
-	std::chrono::steady_clock::time_point previous_time;
-
-public:
-	void update() {
-		previous_time = current_time;
-		current_time = std::chrono::high_resolution_clock::now();
-	}
-
-	float delta() const {
-		return std::chrono::duration<float>(current_time - previous_time).count();
-	}
-};
-
-FrameTimer blah = FrameTimer();
-
 void main( )
 {
 	printf( "Loading ...\n" );
+	srand(time(0));
 
 	engine.font_manager = new font_manager( &engine );
 	engine.drawing = new drawing( &engine );
@@ -56,14 +39,11 @@ void main( )
 	engine.desktop->create_icon("Simulator", "sim_game", "window_icon", rect( 30, 220, 50, 50) );
 
 	//simulator::physics_update["7"] = NULL;
-	simulator::run_on_launch();
+	engine.simulator = new static_simulator();
 
 	while ( !glfwWindowShouldClose( engine.get_window( ) ) )
 	{
-		
-		blah.update();
-		engine.deltaTime = blah.delta();
-
+		engine.simulator->fixed_update();
 
 		const vec4 background_color { 0.1f, 0.1f, 0.1f, 1.f };
 		engine.glfw_clear_color( background_color );
@@ -81,9 +61,6 @@ void main( )
 		mouse_cursor::handle_mouse_input( );
 		mouse_cursor::draw_mouse_cursor( );
 		engine.glfw_endframe( );
-
-		printf("FPS %d DT: %.6f\r", engine.fps, engine.deltaTime);
-
 	}
 
 

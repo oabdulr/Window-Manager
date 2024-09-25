@@ -1,12 +1,13 @@
 #pragma once
+
+#include "utils/utils.hpp"
+
 #include <GLFW/glfw3.h>
 #include "string"
 #include "vector"
 #include <chrono>
 
 #include "unordered_map"
-
-#include "utils/utils.hpp"
 
 #include "types/vectors/vec.h"
 #include "dependences/stb_image.h"
@@ -17,9 +18,12 @@ class text_cursor;
 class mouse_cursor;
 class key_manager;
 class engine_window;
+class window;
 class desktop;
 class icon;
 class font;
+class simulator;
+class static_simulator;
 
 struct glyph;
 
@@ -44,8 +48,7 @@ public:
 	text_cursor* text_cursor;
 	mouse_cursor* mouse_cursor;
 	desktop* desktop;
-	float deltaTime;
-	int fps = 0;
+	static_simulator* simulator;
 
 	std::unordered_map<std::string, unsigned int> loaded_textures;
 	std::vector< engine_window > engine_windows { };
@@ -64,4 +67,6 @@ private:
 #include "types/key manager/key_manager.h"
 #include "types/font manager/font.h"
 #include "types/drawing/drawing.h"
+#include "types/simulator/simulator.h"
+#include "types/window/window.h"
 

@@ -37,7 +37,7 @@ void engine_2d::glfw_clear_color( vec4 color )
 
 float engine_2d::get_dT() 
 {
-	return this->deltaTime;
+	return -1.f; // todod
 }
 
 engine_2d::engine_2d( vec2 size, const char* name )

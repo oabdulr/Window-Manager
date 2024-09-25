@@ -1,18 +1,15 @@
 #include "chrono"
 #include "simulator.h"
 
-
-// Desired frame time for 60 FPS
-std::chrono::milliseconds frame_time;
-std::chrono::steady_clock::time_point last_time;
-
-void simulator::run_on_launch() {
-	frame_time = std::chrono::milliseconds(1000 / 60);
-	last_time = std::chrono::steady_clock::now();
-	simulator::physics_update = {};
+bool static_simulator::try_add_update(std::string name, simulator* sim) {
+	return this->physics_update.try_emplace(name, sim).second;
 }
 
-void simulator::fixed_update() {
+int static_simulator::get_list_size() {
+	return this->physics_update.size();
+}
+
+void static_simulator::fixed_update() {
 
 	auto current_time = std::chrono::steady_clock::now();
 	auto elapsed_time = current_time - last_time;
@@ -22,7 +19,7 @@ void simulator::fixed_update() {
 
 
 	// maybe a try catch?
-	//for (auto& function : simulator::physics_update) {
-	//	function.second();
-	//}
+	for (auto& function : this->physics_update) {
+		function.second->fixed_update();
+	}
 }

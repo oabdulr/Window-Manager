@@ -1,40 +1,30 @@
 #pragma once
 #include "game_objects.h"
+#include "functional"
 #include <unordered_map>
 
 class simulator {
 public:
+	void update_window(rect new_size) { this->window_size = new_size; }
+	void fixed_update();
+
+	rect window_size;
 	std::vector<game_object*> objects{};
 
 	bool is_gravity = true;
-	float gravity = 9.81f;
-
-	static void run_on_launch();
-	static void fixed_update();
-
-	// String names to locate and remove certain calls if needed.
-	static std::unordered_map<std::string, void(*)()> physics_update;
+	float gravity = 1.81f;
 };
 
-/*
+class static_simulator { // static (via engine)
+public:
+	void fixed_update();
+	int get_list_size();
+	bool try_add_update(std::string name, simulator* sim);
 
-	static void run_on_launch() {
-		simulator::frame_time = std::chrono::milliseconds(1000 / 60);
-		simulator::last_time = std::chrono::steady_clock::now();
-	}
+private:
+	const int fixed_time = 60; //fps
+	std::unordered_map<std::string, simulator*> physics_update;
 
-	static void fixed_update() {
-
-		auto current_time = std::chrono::steady_clock::now();
-		auto elapsed_time = current_time - last_time;
-
-		if (elapsed_time < frame_time) return;
-		last_time = current_time;
-
-
-		// maybe a try catch?
-		for ( auto& function : physics_update) {
-			function.second();
-		}
-	}
-*/
+	std::chrono::milliseconds frame_time = std::chrono::milliseconds(1000 / fixed_time);
+	std::chrono::steady_clock::time_point last_time = std::chrono::steady_clock::now();
+};

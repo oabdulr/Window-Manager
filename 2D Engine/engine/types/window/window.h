@@ -13,8 +13,11 @@ public:
 		engine->engine_windows.push_back( engine_window( this ) );
 	}
 
-	virtual void content( ) = 0;
-	virtual void handle_input( ) = 0;
+	bool ran_start = false;
+	virtual void implode() {};
+	virtual void start() { this->ran_start = true; }
+	virtual void content() {}
+	virtual void handle_input() { }
 
 	rect size;
 	rect title;
@@ -57,6 +60,7 @@ public:
 #pragma endregion
 
 #pragma region sim windows
+#include "../drawing/drawing.h"
 #include "../simulator/simulator.h"
 
 class sim_window : public window
@@ -65,9 +69,11 @@ public:
 
 	sim_window(engine_2d* engine, rect size) : window(engine, size) {}
 
+	void implode();
+	void start();
 	void content();
 	void handle_input();
 
-	simulator* sim = new simulator();
+	simulator* sim = new simulator(); 
 };
 #pragma endregion
